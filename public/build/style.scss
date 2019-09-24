@@ -1,0 +1,243 @@
+@import url("tailwind.css");
+
+$main-color: #0e1726;
+$sub-color-1: #e5ebef;
+$sub-color-2: #ff5859;
+$sub-color-3: #7986a3;
+$color-white: #ffffff;
+
+body {
+  background-color: #131c2e;
+}
+
+nav {
+  background-color: $main-color;
+  width: auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  div.left-menu {
+    display: flex;
+    color: $sub-color-3;
+    align-items: center;
+    ul {
+      list-style-type: none;
+      display: flex;
+      li {
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 14px;
+        &:hover {
+          color: $color-white;
+          @mixin transition($trans...) {
+            -webkit-transition: $trans;
+            -moz-transition: $trans;
+            transition: $trans;
+          }
+          .transition {
+            @include transition(all 2s ease);
+          }
+        }
+        a {
+          display: flex;
+          align-items: center;
+          img {
+            padding-right: 8px;
+          }
+          span {
+            padding-right: 5px;
+          }
+        }
+      }
+    }
+    .logo {
+      padding-left: 10px;
+      padding-right: 30px;
+    }
+  }
+  div.right-menu {
+    display: flex;
+    align-items: center;
+    p {
+      color: $sub-color-3;
+      font-size: 14px;
+      margin-left: 20px;
+      margin-right: 20px;
+      display: flex;
+      &:hover {
+        color: $color-white;
+      }
+      span {
+        padding-right: 5px;
+      }
+    }
+    button {
+      font-size: 14px;
+      background-color: $sub-color-2;
+      border-radius: 4px;
+      padding: 9px 14px;
+      color: $color-white;
+    }
+  }
+}
+
+.big-logo {
+  margin-top: 150px;
+}
+
+.content {
+  margin-top: 30px;
+  margin-bottom: 100px;
+  .search {
+    form {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      margin-right: auto;
+      width: 664px;
+      height: 54px;
+      border-radius: 10px;
+      border: 1px solid rgba(158, 175, 208, 0.3);
+      background-color: rgba(66, 77, 101, 0.3);
+      input {
+        width: 500px;
+        height: 54px;
+        background-color: transparent;
+        margin-left: 20px;
+        &:focus {
+          outline: none;
+          color: $color-white;
+        }
+      }
+    }
+  }
+}
+
+form svg {
+  margin-left: 100px;
+  color: $sub-color-3;
+}
+
+.cta {
+  margin-top: 25px;
+  button {
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+    font-size: 14px;
+    background-color: $sub-color-2;
+    border-radius: 4px;
+    padding: 9px 24px;
+    color: $color-white;
+  }
+}
+.video-huongdan {
+  padding-top: 60px;
+}
+
+.video1-content {
+  border-radius: 10px;
+  border: 1px solid rgba(158, 175, 208, 0.3);
+  background-color: #182338;
+  width: 500px;
+  height: 280px;
+  video {
+    position: relative;
+    top: -95px;
+  }
+  .noidungtext {
+    margin-top: -100px;
+    padding: 0 30px;
+    h1 {
+      font-size: 16px;
+      color: $color-white;
+      padding-bottom: 5px;
+    }
+    p {
+      font-size: 14px;
+      color: $sub-color-3;
+    }
+  }
+}
+
+.video2-content {
+  border-radius: 10px;
+  border: 1px solid rgba(158, 175, 208, 0.3);
+  background-color: #182338;
+  width: 500px;
+  height: 280px;
+  video {
+    position: relative;
+    top: -95px;
+  }
+  .noidungtext {
+    margin-top: -100px;
+    padding: 0 30px;
+    h1 {
+      font-size: 16px;
+      color: $color-white;
+      padding-bottom: 5px;
+    }
+    p {
+      font-size: 14px;
+      color: $sub-color-3;
+    }
+  }
+}
+
+footer {
+  background-color: #182338;
+  height: 280px;
+  width: auto;
+  margin-top: 200px;
+  .content-footer {
+    align-items: center;
+    height: 280px;
+    .col1 {
+      p {
+        color: $sub-color-3;
+        font-size: 14px;
+        padding-top: 15px;
+      }
+    }
+    .col23 {
+      .col2,
+      .col3 {
+        padding: 40px;
+      }
+      p {
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        padding-bottom: 10px;
+      }
+      ul {
+        list-style-type: none;
+        li {
+          color: $sub-color-3;
+          margin: 5px 0px;
+          font-size: 14px;
+        }
+      }
+    }
+    .col4 {
+      button {
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        display: flex;
+        font-size: 14px;
+        background-color: #131c2e;
+        border-radius: 4px;
+        padding: 12px 36px;
+        color: $color-white;
+        span {
+          padding-left:5px ;
+        }
+      }
+    }
+  }
+}
